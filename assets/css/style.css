@@ -1,0 +1,393 @@
+.loader-wrapper {
+    z-index: 9999;
+}
+
+.loader {
+    width: calc(6*30px);
+    height: 50px;
+    display: flex;
+    color: #DF5E38;
+    filter: drop-shadow(30px 25px 0 currentColor) drop-shadow(60px 0 0 currentColor) drop-shadow(120px 0 0 currentColor);
+    -webkit-clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 100% 0 0);
+    animation: l12 2s infinite steps(7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader:before {
+    content: "";
+    width: 30px;
+    height: 25px;
+    --c: no-repeat radial-gradient(farthest-side, currentColor 92%, #0000);
+    background:
+        var(--c) left /70% 70%,
+        var(--c) right/20% 20%,
+        var(--c) top 0 right 15%/20% 20%,
+        var(--c) bottom 0 right 15%/20% 20%;
+}
+
+@keyframes l12 {
+    100% {
+        -webkit-clip-path: inset(0 -30px 0 0);
+        clip-path: inset(0 -30px 0 0)
+    }
+}
+
+:root {
+    --bs-primary-rgb: 223, 94, 56;
+    --bs-secondary-rgb: 222, 242, 252;
+}
+
+@font-face {
+    font-family: 'Degular';
+    src: url('../fonts/DegularVariable.ttf');
+    font-weight: 100 900;
+    font-stretch: 75% 100%;
+    font-style: normal italic;
+}
+
+body {
+    font-family: 'Degular', sans-serif, Arial, Helvetica;
+    color: #000;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #DF5E38;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button,
+textarea {
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.gap-30 {
+    gap: 10px;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.-mb-1{
+    margin-bottom: -1px;
+}
+
+.bg-cover{
+    background-size: cover !important;
+}
+.bg-bottom{
+    background-position: bottom !important;
+}
+
+.min-w-max {
+    min-width: max-content;
+}
+
+.list-square {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.rounded-16 {
+    border-radius: 16px;
+}
+
+.inner-space {
+    padding: 40px 0;
+}
+
+.shadow-1 {
+    box-shadow: 0 13px 24.5px rgba(0, 0, 0, 0.1);
+}
+
+.main-header {
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(139, 218, 78) 100%);
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.main-header .menu {
+    border-radius: 16px;
+    padding: 0 10px;
+}
+
+.main-header .nav-link {
+    display: block;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.nav-link.active {
+    font-weight: 600;
+    color: #0E81A7;
+}
+
+.offcanvas {
+    --bs-offcanvas-width: 250px;
+}
+
+footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid #0C8DBF;
+}
+
+.hero {
+    background-image: url('../images/hero-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.about {
+    background-image: url('../images/about-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.blue-gdnt {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(156, 217, 245, 1) 100%);
+}
+
+.vio-gallery .col {
+    padding: 2px;
+}
+
+.vio-gallery img {
+    border-radius: 5px;
+}
+
+.roadmap {
+    gap: 30px;
+}
+
+.roadmap p {
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 100%;
+    font-weight: 600;
+}
+
+.stacking-hero {
+    background-image: url('../images/staking-hero-bg.png');
+    background-position: top;
+}
+
+.staking-voting img {
+    max-width: 144px;
+}
+
+.staking-voting .bg-secondary {
+    background-color: #82D1F2 !important;
+}
+
+.faq .accordion-button::after {
+    background-image: url('../images/plus.svg');
+    transition: none;
+}
+
+.faq .accordion-button {
+    font-weight: bold;
+    color: #000;
+}
+
+.faq .accordion-button.collapsed {
+    color: #00000080;
+    font-weight: normal;
+}
+
+.faq .accordion-button:not(.collapsed)::after {
+    background-image: url('../images/minus.svg');
+}
+
+.amout-to-stake input::placeholder {
+    color: #000;
+}
+
+footer .social-icons {
+    gap: 20px;
+}
+
+@media (min-width:992px) {
+    footer .social-icons a {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer .menu a {
+        font-size: 17px;
+    }
+
+    footer .fs-14 {
+        font-size: 16px;
+    }
+
+    .inner-space {
+        padding: 80px 0;
+    }
+
+    .vio-gallery {
+        padding: 10px;
+        background-color: #000;
+    }
+
+    .vio-gallery .col {
+        padding: 10px;
+    }
+
+    .vio-gallery img {
+        border-radius: 16px;
+    }
+}
+
+@media (min-width:1400px) {
+    .main-header .nav-link {
+        padding: 18px 40px !important;
+        border-radius: 16px;
+    }
+
+    footer .nav-link {
+        padding: 16px 56px !important;
+        font-size: 20px;
+    }
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1458px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .faq h1 {
+        font-size: 64px;
+    }
+
+    .fs-30 {
+        font-size: 30px !important;
+    }
+
+    .hero .social-icons a {
+        width: 70px;
+        height: 70px;
+        border-radius: 16px;
+    }
+
+    .stacking-hero .social-icons a {
+        width: 60px;
+        height: 60px;
+        border-radius: 16px;
+    }
+
+    header.p-lg-3 {
+        padding: 30px 0 !important;
+    }
+
+    .hero {
+        padding-top: 210px;
+        padding-bottom: 100px;
+    }
+
+    .inner-space {
+        padding: 100px 0;
+    }
+
+    .gap-30 {
+        gap: 30px;
+    }
+
+    .display-4 {
+        font-size: 54px;
+    }
+
+    .community .fs-2 {
+        font-size: 36px !important;
+    }
+
+    .roadmap p {
+        padding: 24px 100px 24px 50px;
+        border-radius: 16px;
+        margin-right: 80px;
+    }
+
+    .roadmap {
+        gap: 80px;
+    }
+
+    footer .menu a {
+        font-size: 20px;
+        padding: 16px 55px !important;
+    }
+
+    .fs-48 {
+        font-size: 48px;
+    }
+}
