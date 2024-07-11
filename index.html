@@ -23,6 +23,7 @@
                         <li><a class="p-3 px-xl-4 nav-link active" href="index.html">HOME</a></li>
                         <li><a class="p-3 px-xl-4 nav-link" href="index.html#about">ABOUT</a></li>
                         <li><a class="p-3 px-xl-4 nav-link" href="index.html#road-map">ROAD MAP</a></li>
+                        <li><a class="p-3 px-xl-4 nav-link" href="index.html#dex">CHART</a></li>
                     </ul>
                     <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                             aria-controls="offcanvasRight" class="bg-primary p-3 rounded d-lg-none">
@@ -109,10 +110,13 @@
                 <div class="text-center d-flex flex-column align-items-center gap-4 mt-sm-5">
                     <div class="bg-white border border-primary d-inline-block p-4 rounded-4">
                         <div class="d-flex flex-wrap gap-2 align-items-center justify-content-center">
-                            <span class="fs-3 text-primary fw-bold fs-30">0xxxxxxxxxxxxxxxxxxxxxx</span>
+                            <span class="fs-3 text-primary fw-bold fs-30">dszwaw3dscz6fy3rhzcrnaptdrdaxzwjyxuypykm3llp</span>
                         </div>
                     </div>
-                    <button class="bg-black text-white fs-4 py-3 px-5 mt-sm-4 rounded-3 fw-bold">BUY NOW</button>
+                    <button class="bg-black text-white fs-4 py-3 px-5 mt-sm-4 rounded-3 fw-bold"
+                            onclick="window.location.href='https://dexscreener.com/solana/dszwaw3dscz6fy3rhzcrnaptdrdaxzwjyxuypykm3llp'">
+                        BUY OFF OF MOONSHOT
+                    </button>
                 </div>
             </div>
         </div>
@@ -242,6 +246,41 @@
             </div>
         </div>
     </section>
+    <section class="about inner-space" id="dex">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <h2 class="display-4 text-primary fw-bold">DEXSCREENER</h2>
+                <br>
+                <br>
+                <br>
+                <style>#dexscreener-embed {
+                    position: relative;
+                    width: 100%;
+                    padding-bottom: 125%;
+                }
+
+                @media (min-width: 1400px) {
+                    #dexscreener-embed {
+                        padding-bottom: 65%;
+                    }
+                }
+
+                #dexscreener-embed iframe {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    border: 0;
+                }</style>
+                <div id="dexscreener-embed">
+                    <iframe src="https://dexscreener.com/solana/HHEwmRNRK3ZAjT6ukcndxjKQHKcdG9TMJuBNx9BALjZX?embed=1&theme=dark&trades=0"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 </main>
 <footer class="bg-black text-white py-4">
     <div class="container-fluid">
